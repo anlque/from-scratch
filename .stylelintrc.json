@@ -1,7 +1,7 @@
 {
     "extends": ["stylelint-config-standard-scss"],
     "rules": {
-        "indentation": [2],
+        "indentation": [4],
         "selector-class-pattern": null,
         "no-empty-source": null,
         "custom-property-no-missing-var-function": null

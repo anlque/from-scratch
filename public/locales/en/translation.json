@@ -1,5 +1,8 @@
 {
-    "Тестовый пример": "Test example",
-    "Перевод": "Translate",
-    "Язык": "English"
+  "Тестовый пример": "Test example",
+  "Перевод": "Translate",
+  "Язык": "English",
+  "not_found": "Page not found",
+  "page_error": "Unexpected error happened",
+  "reload_page": "Reload page"
 }
