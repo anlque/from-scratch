@@ -4,5 +4,6 @@
   "Язык": "English",
   "not_found": "Page not found",
   "page_error": "Unexpected error happened",
-  "reload_page": "Reload page"
+  "reload_page": "Reload page",
+  "toggle": "Toggle"
 }
