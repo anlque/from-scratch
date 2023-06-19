@@ -1,6 +1,5 @@
-./build
-./node_modules
-./.DS_Store
-node_modules
-build
+.idea
 .DS_Store
+storybook-static
+.loki/report.html
+.loki/report.json
