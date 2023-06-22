@@ -7,30 +7,30 @@ import { BuildOptions } from './types/config';
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstance[] {
-    return [
-        new HtmlWebpackPlugin({
-            template: paths.html,
-        }),
-        new webpack.ProgressPlugin(),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].css',
-            chunkFilename: 'css/[name].[contenthash:8].css',
-        }),
-        new webpack.DefinePlugin({
-            __IS_DEV__: JSON.stringify(isDev),
-        }),
-        new webpack.HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin(),
-        new BundleAnalyzerPlugin({ openAnalyzer: false }),
-        {
-            apply: (compiler) => {
-              compiler.hooks.done.tap("DonePlugin", (stats) => {
-                console.log("Compile is done !");
-                setTimeout(() => {
-                  process.exit(0);
-                });
-              });
-            },
-          },
-    ];
+
+    const plugins = [ new HtmlWebpackPlugin({
+        template: paths.html,
+    }),
+    new webpack.ProgressPlugin(),
+    new MiniCssExtractPlugin({
+        filename: 'css/[name].[contenthash:8].css',
+        chunkFilename: 'css/[name].[contenthash:8].css',
+    }),
+    new webpack.DefinePlugin({
+        __IS_DEV__: JSON.stringify(isDev),
+    }),
+
+    new ReactRefreshWebpackPlugin(),
+
+];
+
+    if(isDev){
+        plugins.push(new webpack.HotModuleReplacementPlugin())
+        plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }))
+    }
+
+
+
+
+    return plugins
 }
