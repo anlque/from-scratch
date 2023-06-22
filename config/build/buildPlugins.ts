@@ -3,6 +3,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack, { WebpackPluginInstance } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
+import { Compiler } from 'webpack';
 
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
@@ -23,7 +24,7 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
     new ReactRefreshWebpackPlugin(),
 
     {
-        apply: (compiler) => {
+        apply: (compiler:Compiler) => {
           compiler.hooks.done.tap("DonePlugin", () => {
             console.log("Compile is done !");
             setTimeout(() => {
