@@ -21,10 +21,10 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
     }),
 
     new ReactRefreshWebpackPlugin(),
-    
+
     {
         apply: (compiler) => {
-          compiler.hooks.done.tap("DonePlugin", (stats) => {
+          compiler.hooks.done.tap("DonePlugin", () => {
             console.log("Compile is done !");
             setTimeout(() => {
               process.exit(0);
