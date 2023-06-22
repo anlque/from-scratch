@@ -24,7 +24,6 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
     {
         apply: (compiler:Compiler) => {
             compiler.hooks.done.tap('DonePlugin', () => {
-
                 setTimeout(() => {
                     process.exit(0);
                 });
