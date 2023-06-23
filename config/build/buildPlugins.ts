@@ -19,23 +19,22 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
         __IS_DEV__: JSON.stringify(isDev),
     }),
 
-    new ReactRefreshWebpackPlugin(),
-
-    {
-        apply: (compiler:Compiler) => {
-            compiler.hooks.done.tap('DonePlugin', () => {
-                setTimeout(() => {
-                    process.exit(0);
-                });
-            });
-        },
-    },
+    // {
+    //     apply: (compiler:Compiler) => {
+    //         compiler.hooks.done.tap('DonePlugin', () => {
+    //             setTimeout(() => {
+    //                 process.exit(0);
+    //             });
+    //         });
+    //     },
+    // },
 
     ];
 
     if (isDev) {
         plugins.push(new webpack.HotModuleReplacementPlugin());
         plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
+        plugins.push(new ReactRefreshWebpackPlugin())
     }
 
     return plugins;
