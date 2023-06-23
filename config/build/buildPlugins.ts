@@ -11,7 +11,7 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
         template: paths.html,
     }),
     new webpack.ProgressPlugin(),
-    
+
     new MiniCssExtractPlugin({
         filename: 'css/[name].[contenthash:8].css',
         chunkFilename: 'css/[name].[contenthash:8].css',
@@ -20,22 +20,12 @@ export function buildPlugins({ isDev, paths }:BuildOptions): WebpackPluginInstan
         __IS_DEV__: JSON.stringify(isDev),
     }),
 
-    // {
-    //     apply: (compiler:Compiler) => {
-    //         compiler.hooks.done.tap('DonePlugin', () => {
-    //             setTimeout(() => {
-    //                 process.exit(0);
-    //             });
-    //         });
-    //     },
-    // },
-
     ];
 
     if (isDev) {
         plugins.push(new webpack.HotModuleReplacementPlugin());
         plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
-        plugins.push(new ReactRefreshWebpackPlugin())
+        plugins.push(new ReactRefreshWebpackPlugin());
     }
 
     return plugins;
