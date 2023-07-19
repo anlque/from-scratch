@@ -1,9 +1,12 @@
 {
   "Тестовый пример": "Test example",
   "Перевод": "Translate",
-  "Язык": "English",
+  "lang": "English",
+  "short_lang": "En",
   "not_found": "Page not found",
   "page_error": "Unexpected error happened",
   "reload_page": "Reload page",
-  "toggle": "Toggle"
+  "toggle": "Toggle",
+  "main_page": "Main page",
+  "about_us": "About us"
 }
