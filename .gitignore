@@ -6,3 +6,5 @@ storybook-static
 .loki/report.html
 .loki/report.json
 /storybook-static
+/loki/report.html
+/loki/report.json
