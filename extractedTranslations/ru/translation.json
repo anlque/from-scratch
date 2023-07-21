@@ -1,5 +1,7 @@
 {
   "about_us": "about_us",
+  "enter": "enter",
+  "login": "login",
   "main_page": "main_page",
   "not_found": "not_found",
   "page_error": "page_error",
