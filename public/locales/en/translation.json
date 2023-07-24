@@ -9,5 +9,7 @@
   "toggle": "Toggle",
   "main_page": "Main page",
   "about_us": "About us",
-  "login": "Log In"
+  "login": "Log In",
+  "enter_username": "Enter your name",
+  "enter_password": "Enter your password"
 }

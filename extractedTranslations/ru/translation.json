@@ -1,6 +1,8 @@
 {
   "about_us": "about_us",
   "enter": "enter",
+  "enter_password": "enter_password",
+  "enter_username": "enter_username",
   "login": "login",
   "main_page": "main_page",
   "not_found": "not_found",
