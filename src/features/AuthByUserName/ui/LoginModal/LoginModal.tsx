@@ -9,16 +9,13 @@ interface LoginModalProps {
     onClose: ()=>void
 }
 
-export const LoginModal = ({ className, isOpen, onClose }: LoginModalProps) => {
-    const test = '';
-    return (
-        <Modal
-            isOpen={isOpen}
-            onClose={onClose}
-            lazy
-            className={classNames(cls.LoginModal, {}, [className])}
-        >
-            <LoginForm />
-        </Modal>
-    );
-};
+export const LoginModal = ({ className, isOpen, onClose }: LoginModalProps) => (
+    <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        lazy
+        className={classNames(cls.LoginModal, {}, [className])}
+    >
+        <LoginForm />
+    </Modal>
+);
