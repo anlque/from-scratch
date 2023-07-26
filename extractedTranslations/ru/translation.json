@@ -1,0 +1,12 @@
+{
+  "about_us": "about_us",
+  "auth_blank": "auth_blank",
+  "enter_password": "enter_password",
+  "enter_username": "enter_username",
+  "login": "login",
+  "logout": "logout",
+  "main_page": "main_page",
+  "not_found": "not_found",
+  "page_error": "page_error",
+  "reload_page": "reload_page"
+}

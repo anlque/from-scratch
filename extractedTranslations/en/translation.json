@@ -1,9 +1,11 @@
 {
   "about_us": "about_us",
+  "auth_blank": "",
   "enter": "enter",
   "enter_password": "enter_password",
   "enter_username": "enter_username",
   "login": "login",
+  "logout": "",
   "main_page": "main_page",
   "not_found": "not_found",
   "page_error": "page_error",

@@ -13,5 +13,8 @@
     "about_us": "О сайте",
     "login": "Войти",
     "enter_username": "Введите имя",
-    "enter_password": "Введите пароль"
+    "enter_password": "Введите пароль",
+    "auth_blank": "Форма авторизации",
+    "wrong_auth": "Вы ввели неправильный логин или пароль",
+    "logout": "Выйти"
 }

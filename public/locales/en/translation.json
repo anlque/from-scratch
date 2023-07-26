@@ -11,5 +11,8 @@
   "about_us": "About us",
   "login": "Log In",
   "enter_username": "Enter your name",
-  "enter_password": "Enter your password"
+  "enter_password": "Enter your password",
+  "auth_blank": "Authorization blank",
+  "wrong_auth": "You entered wrong login or password",
+  "logout": "Log out"
 }
