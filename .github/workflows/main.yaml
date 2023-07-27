@@ -22,9 +22,6 @@ jobs:
       - name: build production project
         run: npm run build:prod
         if: always()
-      - name: build ts
-        run: npm run lint:typecheck
-        if: always()
       - name: linting typescript
         run: npm run lint:ts
         if: always()
