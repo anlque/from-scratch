@@ -14,5 +14,6 @@
   "enter_password": "Enter your password",
   "auth_blank": "Authorization blank",
   "wrong_auth": "You entered wrong login or password",
-  "logout": "Log out"
+  "logout": "Log out",
+  "profile_page": "Profile page"
 }

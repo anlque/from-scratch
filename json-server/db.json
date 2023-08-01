@@ -8,7 +8,16 @@
     "comments": [
       { "id": "1", "body": "some comment", "postId": 1 }
     ],
-    "profile": { "name": "typicode" },
+    "profile": {  
+    "first": "Ani",
+    "lastname": "Quem",
+    "age": 23,
+    "currency": "UAH",
+    "country": "Ukraine",
+    "city": "Zp",
+    "username": "admin",
+    "avatar": "https://i.ytimg.com/vi/Q6Nsvrnnug8/maxresdefault.jpg" 
+  },
     "users": [
         {
           "id": "1",
