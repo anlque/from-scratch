@@ -2,5 +2,11 @@
     "title": "Profile",
     "edit": "Edit",
     "your_name": "Enter your name",
-    "your_surname": "Enter your surname"
+    "your_surname": "Enter your surname",
+    "your_age": "Enter your age",
+    "your_city": "Enter your city",
+    "ptofile_error": "Error occured while loading your profile",
+    "try_reload": "Try reload the page",
+    "decline":"Decline",
+    "save": "Save"
 }

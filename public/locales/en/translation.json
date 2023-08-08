@@ -15,5 +15,7 @@
   "auth_blank": "Authorization blank",
   "wrong_auth": "You entered wrong login or password",
   "logout": "Log out",
-  "profile_page": "Profile page"
+  "profile_page": "Profile page",
+  "choose_cur": "Choose the currency",
+  "choose_country": "Choose the country"
 }

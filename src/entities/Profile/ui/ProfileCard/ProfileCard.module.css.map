@@ -1,1 +1,1 @@
-{"version":3,"sources":["ProfileCard.module.scss","ProfileCard.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,0CAAA;ACCJ;;ADEA;EACI,aAAA;ACCJ;;ADEA;EACI,iBAAA;ACCJ;;ADEA;EACI,gBAAA;ACCJ;;ADEA;EACI,gBAAA;ACCJ","file":"ProfileCard.module.css"}
+{"version":3,"sources":["ProfileCard.module.scss","ProfileCard.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,0CAAA;ACCJ;;ADEA;EACI,gBAAA;ACCJ;;ADEA;;EAEI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;ACCJ","file":"ProfileCard.module.css"}
