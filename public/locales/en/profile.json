@@ -5,8 +5,16 @@
     "your_surname": "Enter your surname",
     "your_age": "Enter your age",
     "your_city": "Enter your city",
+    "your_avatar": "Pin your avatar",
     "ptofile_error": "Error occured while loading your profile",
     "try_reload": "Try reload the page",
     "decline":"Decline",
-    "save": "Save"
+    "save": "Save",
+    "errors": {
+        "INCORRECT_USER_DATA": "Enter your name and surname",
+        "INCORRECT_AGE": "The age should includes only numbers",
+        "INCORRECT_REGION": "Enter correct region",
+        "NO_DATA": "No data specified",
+        "SERVER_ERROR": "Server error within saving"
+    }
 }
