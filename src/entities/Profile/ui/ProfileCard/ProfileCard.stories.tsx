@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
-import AvatarImg from 'shared/assets/tests/avatar.jpeg';
+// import AvatarImg from 'shared/assets/tests/avatar.jpeg';
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -27,7 +27,7 @@ Primary.args = {
         country: Country.Ukraine,
         city: 'City',
         username: 'Admin',
-        avatar: AvatarImg,
+        avatar: 'https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg',
     },
 };
 
