@@ -16,6 +16,8 @@
   "wrong_auth": "You entered wrong login or password",
   "logout": "Log out",
   "profile_page": "Profile page",
+  "articles_page": "Articles",
+  "article_details_page": "Article details",
   "choose_cur": "Choose the currency",
   "choose_country": "Choose the country"
 }

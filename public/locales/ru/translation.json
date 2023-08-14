@@ -19,5 +19,7 @@
     "logout": "Выйти",
     "profile_page": "Страница профиля",
     "choose_cur": "Выберите валюту",
-    "choose_country": "Выберите страну"
+    "choose_country": "Выберите страну",
+    "articles_page": "Статьи",
+    "article_details_page": "Детали статьи"
 }
