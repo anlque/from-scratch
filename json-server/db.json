@@ -127,13 +127,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://i.ytimg.com/vi/Q6Nsvrnnug8/maxresdefault.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://i.imgflip.com/1gl4ru.jpg?a469920"
     }
   ]
 }

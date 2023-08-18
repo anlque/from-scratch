@@ -19,5 +19,6 @@
   "articles_page": "Articles",
   "article_details_page": "Article details",
   "choose_cur": "Choose the currency",
-  "choose_country": "Choose the country"
+  "choose_country": "Choose the country",
+  "no_comments": "There are no comments yet"
 }
