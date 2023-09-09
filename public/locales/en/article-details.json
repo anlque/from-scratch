@@ -1,5 +1,7 @@
 {
     "not_found": "Article is not found",
     "loading_error": "Error while loading the article",
-    "comments": "Article comments"
+    "comments": "Article comments",
+    "enter_comment": "Enter the comment",
+    "send":"Send"
 }

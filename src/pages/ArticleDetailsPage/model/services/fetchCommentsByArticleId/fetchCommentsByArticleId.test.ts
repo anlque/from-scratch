@@ -1,20 +1,18 @@
 import { TestAsyncThunk } from 'shared/config/tests/TestAsyncThunk/TestAsyncThunk';
-import { Currency } from 'entities/Currency';
-import { Country } from 'entities/Country';
-import { fetchProfileData } from './fetchProfileData';
+import { fetchCommentsByArticleId } from './fetchCommentsByArticleId';
 
 const data = {
-    first: 'Firstname',
-    lastname: 'Lastname',
-    age: 23,
-    currency: Currency.UAH,
-    country: Country.Ukraine,
-    city: 'City',
-    username: 'Admin',
+    id: '1',
+    user: {
+        id: '1',
+        username: 'username',
+    },
+    text: 'text',
 };
-describe('fetchProfileData', () => {
+
+describe('fetchCommentsByArticleId', () => {
     it('success', async () => {
-        const thunk = new TestAsyncThunk(fetchProfileData);
+        const thunk = new TestAsyncThunk(fetchCommentsByArticleId);
         thunk.api.get.mockReturnValue(Promise.resolve({ data }));
         const result = await thunk.callThunk('1');
         expect(thunk.api.get).toHaveBeenCalled();
@@ -23,7 +21,7 @@ describe('fetchProfileData', () => {
     });
 
     it('error', async () => {
-        const thunk = new TestAsyncThunk(fetchProfileData);
+        const thunk = new TestAsyncThunk(fetchCommentsByArticleId);
         thunk.api.get.mockReturnValue(Promise.resolve({ status: 403 }));
         const result = await thunk.callThunk('1');
         expect(result.meta.requestStatus).toBe('rejected');

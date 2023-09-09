@@ -29,7 +29,9 @@
       "img": "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -110,18 +112,56 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "nice",
+      "id": "RvZ96_h"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "i like it",
+      "id": "g0pgrdY"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "123",
+      "id": "uCzcDrR"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "new comment",
+      "id": "iHv8igd"
     }
   ],
-  "profile": {
-    "first": "Ani",
-    "lastname": "Quem",
-    "age": 23,
-    "currency": "UAH",
-    "country": "Ukraine",
-    "city": "Zp",
-    "username": "admin",
-    "avatar": "https://i.ytimg.com/vi/Q6Nsvrnnug8/maxresdefault.jpg"
-  },
+  "profile": [
+    {
+      "id": "1",
+      "first": "Ani",
+      "lastname": "Quem",
+      "age": 23,
+      "currency": "UAH",
+      "country": "Ukraine",
+      "city": "Zp",
+      "username": "admin",
+      "avatar": "https://i.ytimg.com/vi/Q6Nsvrnnug8/maxresdefault.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Dan",
+      "lastname": "Quem",
+      "age": 33,
+      "currency": "UAH",
+      "country": "Ukraine",
+      "city": "Zp",
+      "username": "username",
+      "avatar": "https://en.meming.world/images/en/thumb/b/b9/Cursed_Cat.jpg/600px-Cursed_Cat.jpg"
+    }
+  ],
   "users": [
     {
       "id": "1",
