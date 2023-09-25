@@ -3,5 +3,6 @@
     "loading_error": "Error while loading the article",
     "comments": "Article comments",
     "enter_comment": "Enter the comment",
-    "send":"Send"
+    "send":"Send",
+    "back_to_list": "Back to list"
 }
