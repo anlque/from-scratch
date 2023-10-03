@@ -5,7 +5,7 @@ import { PageLoader } from 'widgets/PageLoader/PageLoader';
 import { RequireAuth } from './RequireAuth';
 
 const renderWithWrapper = (route: AppRoutesProps) => {
-    const element = <div className="page-wrapper">{route.element}</div>;
+    const element = <Suspense fallback={<PageLoader />}>{route.element}</Suspense>;
     return (
         <Route
             key={route.path}
