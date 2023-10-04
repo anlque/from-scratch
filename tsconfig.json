@@ -7,7 +7,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    // Для абсолютного импорта
+    // Для абсолютного импорта 
     "baseUrl": ".",
     "strict": true,
     "paths": {
