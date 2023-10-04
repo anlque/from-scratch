@@ -1,6 +1,5 @@
 import { memo, useCallback } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import ListIcon from 'shared/assets/icons/burger.svg';
 import TileIcon from 'shared/assets/icons/tile.svg';
 import { ArticleView } from 'entities/Article/model/types/article';
@@ -26,8 +25,6 @@ const viewTypes = [
 ];
 
 export const ArticleViewSelector = memo(({ className, view, onViewClick }: ArticleViewSelectorProps) => {
-    const { t } = useTranslation();
-
     const onClick = useCallback((newView: ArticleView) => () => {
         onViewClick?.(newView);
     }, [onViewClick]);
@@ -36,6 +33,7 @@ export const ArticleViewSelector = memo(({ className, view, onViewClick }: Artic
         <div className={classNames('', {}, [className])}>
             {viewTypes.map((viewType) => (
                 <Button
+                    key={viewType.view}
                     theme={ButtonTheme.CLEAR}
                     onClick={onClick(viewType.view)}
                 >
