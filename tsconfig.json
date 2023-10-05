@@ -10,7 +10,7 @@
     // Для абсолютного импорта 
     "baseUrl": ".",
     "strict": true,
-    "paths": {
+    "paths": { 
       "*": ["./src/*"]
     },
     "esModuleInterop": true,

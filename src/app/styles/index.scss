@@ -17,3 +17,18 @@ body {
 .content-page {
     display: flex;
 }
+
+*::-webkit-scrollbar {
+    width: 12px;               /* scrollbar width */
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--card-bg);        /* path color */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--inverted-primary-color);    /* plag color */
+    border-radius: 20px;       /* plag rounding */
+    border: 2px solid var(--primary-color);  /* padding around plag */
+}

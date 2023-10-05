@@ -7,7 +7,9 @@ describe('get article comments state', () => {
             isLoading: true,
         };
         const state: DeepPartial<StateSchema> = {
-            articleComments: data,
+            articleDetailsPage: {
+                comments: data,
+            },
         };
 
         expect(getCommentsIsLoading(state as StateSchema)).toBe(data.isLoading);
@@ -18,7 +20,9 @@ describe('get article comments state', () => {
             error: 'error',
         };
         const state: DeepPartial<StateSchema> = {
-            articleComments: data,
+            articleDetailsPage: {
+                comments: data,
+            },
         };
 
         expect(getCommentsError(state as StateSchema)).toBe(data.error);

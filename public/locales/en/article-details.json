@@ -4,5 +4,6 @@
     "comments": "Article comments",
     "enter_comment": "Enter the comment",
     "send":"Send",
-    "back_to_list": "Back to list"
+    "back_to_list": "Back to list",
+    "recommend": "Recommendations:"
 }
