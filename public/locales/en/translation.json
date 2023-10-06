@@ -20,5 +20,7 @@
   "article_details_page": "Article details",
   "choose_cur": "Choose the currency",
   "choose_country": "Choose the country",
-  "no_comments": "There are no comments yet"
+  "no_comments": "There are no comments yet",
+  "app_name": "Insights hub",
+  "create_article":"Create article"
 }

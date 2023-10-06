@@ -22,5 +22,7 @@
     "choose_country": "Выберите страну",
     "articles_page": "Статьи",
     "article_details_page": "Детали статьи",
-    "no_comments": "Комментарии отсутствуют"
+    "no_comments": "Комментарии отсутствуют",
+    "app_name": "Центр сведений",
+    "create_article":"Создать статью"
 }

@@ -22,6 +22,7 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 import { getCommentsIsLoading } from '../../model/selectors/comments';
 import { getArticleComments } from '../../model/slices/articleCommentsSlice';
 import cls from './ArticleDetailsPage.module.scss';
+import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 
 interface ArticleDetailsPageProps {
    className?: string;
@@ -35,17 +36,12 @@ const ArticleDetailsPage: FC<ArticleDetailsPageProps> = (props) => {
     const { t } = useTranslation('article-details');
     const { id } = useParams<{id:string}>();
     const dispatch = useAppDispatch();
-    const navigate = useNavigate();
 
     const comments = useSelector(getArticleComments.selectAll);
     const commentsIsLoading = useSelector(getCommentsIsLoading);
 
     const recommendations = useSelector(getArticleRecommendations.selectAll);
     const recommendationsIsLoading = useSelector(getArticleRecommendationsIsLoading);
-
-    const onBackToList = useCallback(() => {
-        navigate(RoutePath.articles);
-    }, [navigate]);
 
     useInitialEffect(() => {
         dispatch(fetchCommentsByArticleId(id));
@@ -67,9 +63,7 @@ const ArticleDetailsPage: FC<ArticleDetailsPageProps> = (props) => {
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-                <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
-                    {t('back_to_list')}
-                </Button>
+                <ArticleDetailsPageHeader />
                 <ArticleDetails id={id} />
                 <Text size={TextSize.L} className={cls.commentTitle} title={t('recommend')} />
                 <ArticleList
