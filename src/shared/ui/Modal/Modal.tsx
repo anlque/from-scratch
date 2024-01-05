@@ -20,6 +20,8 @@ export const Modal = (props: ModalProps) => {
     const {
         className, children, isOpen, onClose, lazy,
     } = props;
+    const [data, setData] = useState('');
+    const [search, setSearch] = useState('');
 
     const [isClosing, setIsClosing] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
@@ -49,6 +51,14 @@ export const Modal = (props: ModalProps) => {
             closeHandler();
         }
     }, [closeHandler]);
+    useEffect(() => {
+        // Опасный вызов, использующий пользовательский ввод напрямую в fetch
+        fetch(`/api/data?userInput=${search}`)
+            .then((res) => res.json())
+            .then((data) => {
+                setData(data);
+            });
+    }, [search]);
 
     useEffect(() => {
         if (isOpen) {
@@ -79,6 +89,8 @@ export const Modal = (props: ModalProps) => {
                     </div>
                 </div>
             </div>
+            <input value={search} onChange={(e) => setSearch(e.target.value)} />
+            <div dangerouslySetInnerHTML={{ __html: data }} />
         </Portal>
     );
 };
